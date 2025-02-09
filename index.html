@@ -337,115 +337,73 @@
 <!-- skill section end here -->
 
 
-    <!-- portfolio section starts here -->
-    <section class="portfolio" id="portfolio">
-      <div class="heading text-center pt-5">
-        <small>Creative Work</small>
-        <h3>Check My Portfolio</h3>
+   <!-- portfolio section starts here -->
+<section class="portfolio" id="portfolio">
+  <div class="heading text-center pt-5">
+    <small>Creative Work</small>
+    <h3>Check My Portfolio</h3>
+  </div>
+
+  <div id="myBtnContainer" class="text-center mt-4">
+    <!-- here we will create custom attribute using data- for filtering -->
+    <button class="filter-item" data-filter="all">All</button>
+    <button class="filter-item" data-filter="webapp">Web App</button>
+    <button class="filter-item" data-filter="website">Website</button>
+    <button class="filter-item" data-filter="chrome-extension">Chrome Extension</button>
+  </div>
+
+  <div class="portfolio-body">
+    <div class="row justify-content-evenly px-4">
+      <!-- Email Blasting Software -->
+      <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <div class="card">
+          <img src="images/email-blasting-software.png" class="card-img-top" alt="Email Blasting Software" />
+          <div class="card-body text-center">
+            <h4 class="card-title">Email Blasting Software</h4>
+            <span class="badge bg-secondary badge-pill">Node.js</span>
+            <span class="badge bg-secondary badge-pill">JavaScript</span>
+            <span class="badge bg-secondary badge-pill mb-2">Web App</span><br />
+            <a href="https://your-email-blasting-software-link" class="link" target="_blank">Read More</a>
+          </div>
+        </div>
       </div>
 
-      <div id="myBtnContainer" class="text-center mt-4">
-        <!-- here we will create custom attribute using data- for filtering -->
-        <button class="filter-item" data-filter="all">All</button>
-        <button class="filter-item" data-filter="game">Game</button>
-        <button class="filter-item" data-filter="webapp">Web App</button>
-        <button class="filter-item" data-filter="website">Website</button>
-        <button class="filter-item" data-filter="brand">Brand</button>
-      </div>
-      <div class="portfolio-body">
-        <div class="row justify-content-evenly px-4">
-          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/2048game.png" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">2048 Game</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">Game</span
-                ><br />
-                <a href="#" class="link">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img
-                src="images/currency-converter.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body text-center">
-                <h4 class="card-title">Converter App</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">Website</span
-                ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/dictionary.png" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">Dictionary</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">WebApp</span
-                ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-evenly mt-4 px-4">
-          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/piceditor.png" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">PicEditor App</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">App</span
-                ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/tictactoe.png" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">TicTacToe Game</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">Game</span
-                ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img
-                src="images/lang-translator.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body text-center">
-                <h4 class="card-title">Lang Translator</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">Web App</span
-                ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
-              </div>
-            </div>
+      <!-- Email Exporter by p2ilab Chrome Extension -->
+      <div class="post col-md-4 chrome-extension all col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <div class="card">
+          <img src="images/email-exporter-chrome-extension.png" class="card-img-top" alt="Email Exporter Chrome Extension" />
+          <div class="card-body text-center">
+            <h4 class="card-title">Email Exporter by p2ilab</h4>
+            <span class="badge bg-secondary badge-pill">JavaScript</span>
+            <span class="badge bg-secondary badge-pill">Chrome Extension</span>
+            <span class="badge bg-secondary badge-pill mb-2">Extension</span><br />
+            <a href="https://chrome.google.com/webstore/detail/email-exporter-by-p2ilab" class="link" target="_blank">Read More</a>
           </div>
         </div>
       </div>
-    </section>
-    <!-- portfolio section ends here -->
+
+      <!-- Your Web Application -->
+      <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <div class="card">
+          <img src="images/your-web-app.png" class="card-img-top" alt="Your Web Application" />
+          <div class="card-body text-center">
+            <h4 class="card-title">My Web Application</h4>
+            <span class="badge bg-secondary badge-pill">ReactJS</span>
+            <span class="badge bg-secondary badge-pill">Node.js</span>
+            <span class="badge bg-secondary badge-pill mb-2">Web App</span><br />
+            <a href="https://your-web-application-link" class="link" target="_blank">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-evenly mt-4 px-4">
+      <!-- Additional projects can be added here -->
+    </div>
+  </div>
+</section>
+<!-- portfolio section ends here -->
+
 
     <!-- testimonial section starts  -->
     <section class="testimonial mt-5 pt-5" id="testimonial">
