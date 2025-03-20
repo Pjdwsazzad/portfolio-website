@@ -99,49 +99,52 @@
             Hello! I Am <br /><span class="c-orange">Md Sazzad Hosen</span>
           </h2>
           <body>
-    <div class="typing-container" id="typing-text"></div>
+    <div class="typing-container" id="typing-text" style="font-size: 24px; color: #6f34fe;"></div>
 
-    <script>document.addEventListener("DOMContentLoaded", function () {
-    const texts = [
-        "I provide a wide range of digital services.",
-        "I create fully responsive and dynamic websites.",
-        "I develop custom Chrome extensions for automation.",
-        "I specialize in WordPress plugins and WooCommerce stores.",
-        "I build scalable Node.js & Python applications.",
-        "I automate web tasks using Puppeteer.",
-        "I develop email blasting software for outreach.",
-        "I create custom invoicing systems for PayPal and more.",
-        "I automate website login processes securely.",
-        "I build secure REST APIs for system integration.",
-        "I configure SMTP servers for email management."
-    ];
-    
-    let textIndex = 0, charIndex = 0, isDeleting = false;
-    const typingText = document.getElementById("typing-text");
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const texts = [
+                "I provide a wide range of digital services.",
+                "I create fully responsive and dynamic websites.",
+                "I develop custom Chrome extensions for automation.",
+                "I specialize in WordPress plugins and WooCommerce stores.",
+                "I build scalable Node.js & Python applications.",
+                "I automate web tasks using Puppeteer.",
+                "I develop email blasting software for outreach.",
+                "I create custom invoicing systems for PayPal and more.",
+                "I automate website login processes securely.",
+                "I build secure REST APIs for system integration.",
+                "I configure SMTP servers for email management."
+            ];
+            
+            let textIndex = 0, charIndex = 0, isDeleting = false;
+            const typingText = document.getElementById("typing-text");
 
-    function typeEffect() {
-        let currentText = texts[textIndex];
-        typingText.innerHTML = isDeleting 
-            ? currentText.substring(0, charIndex--) 
-            : currentText.substring(0, charIndex++);
-        
-        let speed = isDeleting ? 50 : 100;
+            function typeEffect() {
+                let currentText = texts[textIndex];
+                typingText.innerHTML = isDeleting 
+                    ? currentText.substring(0, charIndex--) 
+                    : currentText.substring(0, charIndex++);
+                
+                let speed = isDeleting ? 50 : 100;
 
-        if (!isDeleting && charIndex === currentText.length) {
-            speed = 1500;
-            isDeleting = true;
-        } else if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            textIndex = (textIndex + 1) % texts.length;
-            speed = 500;
-        }
+                if (!isDeleting && charIndex === currentText.length) {
+                    speed = 1500;
+                    isDeleting = true;
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    textIndex = (textIndex + 1) % texts.length;
+                    speed = 500;
+                }
 
-        setTimeout(typeEffect, speed);
-    }
+                setTimeout(typeEffect, speed);
+            }
 
-    typeEffect();
-});
-</script> <!-- Link the external script -->
+            typeEffect();
+        });
+    </script>
+</body>
+
           <p class="text-muted">
             A Web Developer with 5 years of experience, specializing in frontend & backend development. I create fully responsive websites and custom solutions, including Chrome extensions, WordPress plugins, invoicing systems, browser automation, email blasting software, and more. Let’s build something amazing! 🚀
           </p>
