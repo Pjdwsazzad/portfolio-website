@@ -384,17 +384,3 @@ footer .link-group a:hover{
     color: #fff;
     animation: pulse 3s infinite;
 }
-/* External CSS */
-
-/* Add border and height to all education cards */
-.education-card {
-  border: 2px solid #ddd; /* Define the border color */
-  height: 400px;           /* Set the fixed height for all cards */
-  border-radius: 8px;      /* Optional: rounded corners for the card */
-  overflow: hidden;        /* Hide content that overflows the card */
-}
-
-/* Optionally, you can add padding to the card body */
-.education-card .card-body {
-  padding: 20px;
-}
